@@ -1,0 +1,161 @@
+/* Main colors */
+:root{
+    --primary-text-color:#434455;
+    --primary-brand-color: #4D5AE5;
+    --Pressed-state-color: #404BBF;
+    --Dark-color: #2E2F42;
+    --Success-color: #31D0AA;
+    --Subtle-text-color: #8E8F99;
+    --Accent-color: #E7E9FC;
+    --Primary-bacgroung-color: #FFFFFF;
+    --Bacgroung-color: #F4F4FD;
+    --Overlay-color: #2E2F42;
+    --Hero-background-color: #2E2F42;
+}
+/* Body */
+body
+{
+    background-color: var(--Primary-bacgroung-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
+}
+.list {
+    list-style: none;}
+
+/* Logo */
+.logo{
+color: var(--primary-brand-color); 
+font-family: Raleway;
+letter-spacing: 0.03em;
+font-size: 18px;
+line-height: 1.33;
+text-transform: uppercase;
+text-decoration: none;
+}
+.logo .logo-part {
+    color: var(--Dark-color);
+}
+
+
+/* Site nav */
+.site-nav .link
+{color: var(--Dark-color); 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+text-decoration: none;
+}
+
+.adress-link
+{color: var(--primary-text-color);
+font-size: 16px;
+line-height: 1.5;
+font-style: normal;
+text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--Pressed-state-color);
+}
+
+.adress-nav .adress-link:hover,
+.adress-nav .adress-link:focus
+{
+color: var(--Pressed-state-color);
+}
+/* Hero */
+.hero{
+    background-color: var(--Hero-background-color);
+}
+.hero-title{
+    color: var(--Primary-bacgroung-color);
+    font-size: 56px;
+        line-height: 1.07;
+        text-align: center;}
+
+.hero-button{
+    font-family: inherit;
+    color: var(--Primary-bacgroung-color);
+    background-color: var(--primary-brand-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        align-items: center;
+        letter-spacing: 0.04em;
+
+}
+.hero-button:hover, .hero-button:focus{
+    color: var(--Pressed-state-color);
+}
+
+
+/* < -Our features-> */
+.title{
+    color: var(--Dark-color);
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        
+}
+.text{
+    font-size: 16px;
+        line-height: 1.5;
+}
+
+/* What are we doing */
+
+h2{
+    color: var(--Dark-color);
+    font-size: 36px;
+        line-height: 1.11;
+}
+
+/* Our team */
+.team-list{
+    background-color: var(--Bacgroung-color);
+}
+.team {
+    text-align: center;
+}
+
+/* Footer */
+.page-footer{
+    background-color: var(--Dark-color);
+}
+.footer-text{
+    color: var(--Accent-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+.logo-part-light{
+    color: var(--Bacgroung-color);
+}
+
+/* portfolio */
+.portfolio-link{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.portfolio-link:hover, .portfolio-link:focus{
+    color: var(--Pressed-state-color);
+}
+
+.filter-button{
+    font-family: inherit;
+        color: var(--primary-brand-color);
+        background-color: var(--Accent-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+}
+
+.filter-button:hover{
+color: var(--Primary-bacgroung-color);
+    background-color: var(--Pressed-state-color);
+}
