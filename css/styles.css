@@ -18,7 +18,8 @@ body
     background-color: var(--Primary-bacgroung-color);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
-    letter-spacing: 0.02em;
+    font-size: 16px;
+    /* letter-spacing: 0.02em; */
 }
 .list {
     list-style: none;}
@@ -39,31 +40,35 @@ text-decoration: none;
 
 
 /* Site nav */
-.site-nav .link
+.site-nav .nav-link
 {color: var(--Dark-color); 
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
+letter-spacing: 0.02em;
 text-decoration: none;
 }
 
 .adress-link
 {color: var(--primary-text-color);
-font-size: 16px;
 line-height: 1.5;
 font-style: normal;
+letter-spacing: 0.02em;
 text-decoration: none;
 }
-.site-nav .link:hover,
-.site-nav .link:focus{
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus
+{
     color: var(--Pressed-state-color);
+    Cursor: pointer;
 }
 
 .adress-nav .adress-link:hover,
 .adress-nav .adress-link:focus
 {
 color: var(--Pressed-state-color);
+Cursor: pointer;
 }
+
 /* Hero */
 .hero{
     background-color: var(--Hero-background-color);
@@ -72,7 +77,9 @@ color: var(--Pressed-state-color);
     color: var(--Primary-bacgroung-color);
     font-size: 56px;
         line-height: 1.07;
-        text-align: center;}
+        text-align: center;
+    letter-spacing: 0.02em;}
+        
 
 .hero-button{
     font-family: inherit;
@@ -81,26 +88,26 @@ color: var(--Pressed-state-color);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        align-items: center;
-        letter-spacing: 0.04em;
-
-}
+        letter-spacing: 0.04em;}
+        
 .hero-button:hover, .hero-button:focus{
-    color: var(--Pressed-state-color);
+    background-color: var(--Pressed-state-color);
+    Cursor: pointer;
 }
 
 
 /* < -Our features-> */
-.title{
+.features-title{
     color: var(--Dark-color);
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
+        letter-spacing: 0.02em;
         
 }
-.text{
-    font-size: 16px;
+.features-text{
         line-height: 1.5;
+        letter-spacing: 0.02em;
 }
 
 /* What are we doing */
@@ -112,11 +119,20 @@ h2{
 }
 
 /* Our team */
-.team-list{
+.section-team{
     background-color: var(--Bacgroung-color);
 }
-.team {
+.section-team-item{
+    background-color: var(--Primary-bacgroung-color);
+}
+.team-title {
     text-align: center;
+    letter-spacing: 0.02em;
+}
+.team-text{
+    line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
 }
 
 /* Footer */
@@ -125,7 +141,6 @@ h2{
 }
 .footer-text{
     color: var(--Accent-color);
-    font-size: 16px;
     line-height: 1.5;
 }
 .logo-part-light{
@@ -133,29 +148,39 @@ h2{
 }
 
 /* portfolio */
+
+.filter-button {
+    font-family: inherit;
+    color: var(--primary-brand-color);
+    background-color: var(--Accent-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+.filter-button:hover, .filter-button:focus {
+    color: var(--Primary-bacgroung-color);
+    background-color: var(--Pressed-state-color);
+    Cursor: pointer;
+}
+
 .portfolio-link{
     color: var(--primary-text-color);
     text-decoration: none;
     font-size: 16px;
     line-height: 1.5;
-}
-.portfolio-link:hover, .portfolio-link:focus{
-    color: var(--Pressed-state-color);
+    Cursor: pointer;
 }
 
-.filter-button{
-    font-family: inherit;
-        color: var(--primary-brand-color);
-        background-color: var(--Accent-color);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.04em;
+.portfolio-title{
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
 }
 
-.filter-button:hover{
-color: var(--Primary-bacgroung-color);
-    background-color: var(--Pressed-state-color);
+.portfolio-text{
+line-height: 1.5;
+    letter-spacing: 0.02em;
 }
