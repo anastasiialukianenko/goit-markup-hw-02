@@ -1,185 +1,172 @@
-/* Main colors */
+/* Variables */
 :root{
-    --primary-text-color:#434455;
-    --primary-brand-color: #4D5AE5;
-    --Pressed-state-color: #404BBF;
-    --Dark-color: #2E2F42;
-    --Success-color: #31D0AA;
-    --Subtle-text-color: #8E8F99;
-    --Accent-color: #E7E9FC;
-    --Primary-bacgroung-color: #FFFFFF;
-    --Bacgroung-color: #F4F4FD;
-    --Overlay-color: #2E2F42;
-    --Hero-background-color: #2E2F42;
+    --hero-background-color: #2E2F42;
+    --header-color: #2E2F42;
+    --primary-text-color: #434455;
+    --primary-background-color: #FFFFFF;
+    --primary-btn-color: #4D5AE5;
+    --hover-color:#404BBF;
+    --success-color: #31D0AA;
+    --logo-color: #4D5AE5;
+    --accent-color:#E7E9FC;
 }
+
 /* Body */
-body
-{
-    background-color: var(--Primary-bacgroung-color);
+body{
+    background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     font-size: 16px;
-    /* letter-spacing: 0.02em; */
 }
-.list {
-    list-style: none;}
+
+.list{
+    list-style: none;
+}
+.link{
+text-decoration: none;}
+
 
 /* Logo */
-.logo{
-color: var(--primary-brand-color); 
-font-family: Raleway;
-letter-spacing: 0.03em;
-font-size: 18px;
-line-height: 1.33;
-text-transform: uppercase;
-text-decoration: none;
-}
-.logo .logo-part {
-    color: var(--Dark-color);
+
+.logo {
+    color: var(--logo-color);
+    font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
 }
 
+.logo-part {
+    color:#2E2F42;
+}
 
 /* Site nav */
-.site-nav .nav-link
-{color: var(--Dark-color); 
-  font-weight: 500;
-  line-height: 1.5;
-letter-spacing: 0.02em;
-text-decoration: none;
+
+
+.nav-item {
+    color: var(--header-color);
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
 }
 
-.adress-link
-{color: var(--primary-text-color);
-line-height: 1.5;
-font-style: normal;
-letter-spacing: 0.02em;
-text-decoration: none;
-}
-.site-nav .nav-link:hover,
-.site-nav .nav-link:focus
-{
-    color: var(--Pressed-state-color);
-   
-}
+.adress-item {
+    color: var(--primary-text-color);
+    line-height: 1.5;
+        font-style: normal;
+        letter-spacing: 0.02em;}
 
-.adress-nav .adress-link:hover,
-.adress-nav .adress-link:focus
-{
-color: var(--Pressed-state-color);
-
+.nav-item:hover, 
+.nav-item:focus,
+.adress-item:hover, 
+.adress-item:focus{
+    color: var(--hover-color);
 }
 
 /* Hero */
 .hero{
-    background-color: var(--Hero-background-color);
+    background-color: var(--hero-background-color);
 }
 .hero-title{
-    color: var(--Primary-bacgroung-color);
-    font-size: 56px;
-        line-height: 1.07;
-        text-align: center;
-    letter-spacing: 0.02em;}
-        
+color: #FFFFFF;
+font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
 
-.hero-button{
+.hero-button {
     font-family: inherit;
-    color: var(--Primary-bacgroung-color);
-    background-color: var(--primary-brand-color);
+    color: #FFFFFF;
+    background-color:var(--primary-btn-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hover-color);
+    Cursor: pointer;}
+
+ /* < -Our features-> */
+.title{
+color: var(--header-color);
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+.subtitle{
+color: var(--header-color);
+Size:20px;
+Line height: 1.2;
+letter-spacing: 0.02em;
+font-weight: 500;
+}
+
+.text{
+    color: var(--primary-text-color);
+        line-height:1.5;
+        letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* Our features */
+
+
+/* Our team */
+.team{
+    background-color: #F4F4FD;
+}
+
+.section-team-item{
+    background-color: var(--primary-background-color);
+}
+
+.page-footer{
+background: #2E2F42;
+}
+.page-footer .logo-part{
+    color: #F4F4FD;
+}
+.footer-text {
+    color: var(--accent-color);
+    line-height: 1.5;}
+
+    /* Portfolio */
+.filter-btn{
+        font-family: inherit;
+        color: var(--primary-btn-color);
+        background-color: var(--accent-color);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        letter-spacing: 0.04em;}
-        
-.hero-button:hover, .hero-button:focus{
-    background-color: var(--Pressed-state-color);
-    Cursor: pointer;
-}
-
-
-/* < -Our features-> */
-.features-title{
-    color: var(--Dark-color);
-    font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        
-}
-.features-text{
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-}
-
-/* What are we doing */
-
-h2{
-    color: var(--Dark-color);
-    font-size: 36px;
-        line-height: 1.11;
-}
-
-/* Our team */
-.section-team{
-    background-color: var(--Bacgroung-color);
-}
-.section-team-item{
-    background-color: var(--Primary-bacgroung-color);
-}
-.team-title {
-    text-align: center;
-    letter-spacing: 0.02em;
-}
-.team-text{
-    line-height: 1.5;
-        letter-spacing: 0.02em;
         text-align: center;
-}
+        letter-spacing: 0.04em;
+    }
 
-/* Footer */
-.page-footer{
-    background-color: var(--Dark-color);
-}
-.footer-text{
-    color: var(--Accent-color);
-    line-height: 1.5;
-}
-.logo-part-light{
-    color: var(--Bacgroung-color);
-}
+    .filter-btn:hover,
+    .filter-btn:focus {
+        color: #FFFFFF;
+        background-color:#404BBF;
+        Cursor: pointer;
+    }
 
-/* portfolio */
-
-.filter-button {
-    font-family: inherit;
-    color: var(--primary-brand-color);
-    background-color: var(--Accent-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.04em;
-}
-.filter-button:hover, .filter-button:focus {
-    color: var(--Primary-bacgroung-color);
-    background-color: var(--Pressed-state-color);
-    Cursor: pointer;
-}
-
-.portfolio-link{
-    color: var(--primary-text-color);
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 1.5;
-    
-
-.portfolio-title{
-    font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-}
-
-.portfolio-text{
-line-height: 1.5;
-    letter-spacing: 0.02em;
-}
+/* < !--Galaery of works--> */
+.portfolio-link {
+    color: var(--primary-text-color);}
